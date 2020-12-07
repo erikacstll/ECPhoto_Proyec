@@ -1,0 +1,577 @@
+ /*-- VARS---*/
+ 
+ $TittleFont: Poppings,
+ sans-serif;
+ $TittleFontSize: 20px;
+ $TittleColor: whitesmoke;
+ $secondFont: 'Montserrat',
+ sans-serif;
+ $secondTittleColor: $secondTittleColor;
+ $marging:5px,
+ 10px,
+ 3px,
+ 10px;
+ $border:none 10px,
+ none 0px,
+ none 10px,
+ none;
+ /*INDEX SASS + BEM*/
+ 
+ .header {
+     border: 5px outset rgb(33, 33, 33);
+     padding-bottom: 3px;
+     text-align: center;
+     font-family: $TittleFont;
+     font-size: $TittleFontSize;
+     font-style: $TittleColor;
+     .header__Titulo1 {
+         text-align: center;
+         font-size: $TittleFontSize;
+         font-family: $TittleFont;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+     }
+ }
+ 
+ .flexContainerBlock1 {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: normal;
+     text-align: center;
+     margin: 10px 10px 10px 10px;
+     .flexItem--element1 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-end;
+     }
+     .flexItem--element2 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-end;
+     }
+     .flexItem--element3 {
+         align-items: flex-end;
+     }
+ }
+ /*---CSS-----*/
+ 
+ * {
+     font-family: $TittleFont;
+     padding: 0;
+     margin: 0;
+     margin-top: 5px;
+ }
+ 
+ $marging:5px,
+ 10px,
+ 3px,
+ 10px;
+ $border:none 10px,
+ none 0px,
+ none 10px,
+ none;
+ header {
+     @mixin margenes($marging, $border) {
+         margin: $marging;
+         border: $border;
+     }
+ }
+ 
+ main {
+     @mixin margenes($marging, $border) {
+         margin: $marging;
+         border: $border;
+     }
+ }
+ 
+ body {
+     background-color: rgb(33, 33, 33);
+     box-sizing: border-box;
+     margin: 20px;
+     border-right: none 30px;
+     border-bottom: none 100px;
+     border-left: none 30px;
+     border-style: none
+ }
+ 
+ #nav {
+     border: 5px outset rgb(33, 33, 33);
+     padding-bottom: 3px;
+ }
+ 
+ #eclogo {
+     color: $secondTittleColor;
+ }
+ 
+ #discover {
+     color: $secondTittleColor;
+ }
+ 
+ #projects {
+     color: $secondTittleColor;
+ }
+ 
+ #contact {
+     color: $secondTittleColor
+ }
+ 
+ #info {
+     color: $secondTittleColor;
+ }
+ 
+ .footer1 {
+     color: #a9a9ac
+ }
+ 
+ .footer2 {
+     color: #a9a9ac
+ }
+ 
+ .gradiente {
+     background: linear-gradient(to bottom, rgb(33, 33, 33), rgb(73, 70, 70))
+ }
+ 
+ .alt {
+     color: white smoke
+ }
+ 
+ main {
+     @mixin margenes($marging, $border) {
+         margin: $marging;
+         border: $border;
+     }
+     /*-----index-----*/
+     .header__Titulo1 {
+         text-align: center;
+         color: $TittleColor;
+         font-family: $TittleFont;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+     }
+     .subtitulo1 {
+         text-align: end;
+         color: $secondTittleColor;
+         font-family: $secondFont;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+     }
+     .p1 {
+         text-align: end;
+         color: whitesmoke;
+         font-family: $secondFont;
+         letter-spacing: 2px;
+         word-spacing: 20px;
+         font-weight: lighter;
+     }
+     .img1 {
+         display: inline;
+         position: relative;
+         margin-right: 40px;
+         margin-left: 10px;
+         right: 0px;
+         border-radius: 5%;
+     }
+     .subtitulo2 {
+         color: $secondTittleColor;
+         font-family: $secondFont;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+         text-align: start;
+     }
+     .p2 {
+         text-align: start;
+         color: whitesmoke;
+         font-family: $secondFont;
+         letter-spacing: 2px;
+         word-spacing: 20px;
+         font-weight: lighter;
+     }
+     .img2 {
+         display: inline-flex;
+         position: left;
+         top: 85px;
+         left: 49px;
+         clear: right;
+         border-radius: 5%;
+     }
+     .subtitulo3 {
+         color: $secondTittleColor;
+         font-family: $secondFont;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+         text-align: end;
+     }
+     .p3 {
+         color: whitesmoke;
+         font-family: $secondFont;
+         letter-spacing: 2px;
+         word-spacing: 20px;
+         font-weight: lighter;
+         text-align: end;
+     }
+     .img3 {
+         display: inline;
+         position: relative;
+         margin-right: 40px;
+         margin-left: 10px;
+         right: 0px;
+         border-radius: 5%;
+     }
+     .myDiv {
+         border: 5px outset rgb(33, 33, 33);
+         padding-bottom: 3px;
+         text-align: center;
+     }
+     /*------flexbox-INDEX+PROJECT-----*/
+     .flexContainerBlock1 {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: normal;
+         text-align: center;
+         margin: 10px 10px 10px 10px;
+     }
+     .flexItem--element1 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-end;
+     }
+     .flexItem--element2 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-end;
+     }
+     .flexItem--element3 {
+         align-items: flex-end;
+     }
+     .flex-container2 {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: normal;
+         text-align: start;
+     }
+     /*------DISCOVER-----*/
+     .myDivDisc {
+         border: 5px outset rgb(33, 33, 33);
+         background-color: rgb(33, 33, 33);
+         text-align: left;
+         text-transform: uppercase;
+         color: $TittleColor;
+     }
+     .discover {
+         text-align: center;
+         color: $TittleColor;
+         font-family: poppings, sans-serif;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+     }
+     th {
+         color: $secondTittleColor;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: 3px;
+         text-transform: uppercase
+     }
+     td {
+         color: $secondTittleColor;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: 1px;
+         text-transform: uppercase
+     }
+     ol li {
+         color: whitesmoke;
+         font-family: 'Montserrat', sans-serif;
+     }
+     ul li {
+         color: whitesmoke;
+         font-family: 'Montserrat', sans-serif;
+     }
+     ul li a {
+         color: whitesmoke;
+         font-family: 'Montserrat', sans-serif;
+     }
+     /*------Projects------*/
+     .projects {
+         text-align: left;
+         color: whitesmoke;
+         font-family: poppings, sans-serif;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+         font-size: 40px;
+     }
+     .myDivProject {
+         border: 5px outset rgb(33, 33, 33);
+         background-color: rgb(33, 33, 33);
+         text-align: left;
+         text-transform: uppercase;
+         color: whitesmoke;
+     }
+     ul li {
+         color: $secondTittleColor;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+     }
+     .projectImg1 {
+         display: inline;
+         position: relative;
+         margin-right: 40px;
+         margin-left: 10px;
+         right: 0px;
+     }
+     .projectImg2 {
+         display: inline;
+         position: relative;
+         top: 0px
+     }
+     .projectImg3 {
+         display: inline;
+         position: relative;
+         top: 40px;
+         right: 40px;
+     }
+     /*-----Contact--------*/
+     .myDivContact {
+         border: 5px outset rgb(33, 33, 33);
+         background-color: rgb(33, 33, 33);
+         text-align: left;
+         text-transform: uppercase;
+         color: whitesmoke;
+     }
+     .Contact {
+         text-align: left;
+         color: whitesmoke;
+         font-family: poppings, sans-serif;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+     }
+     .container {
+         color: whitesmoke
+     }
+     /*------flexbox-CONTAC-----*/
+     .flex-container4 {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: normal;
+         text-align: center;
+         margin: 5px;
+     }
+     .flex-item-4 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-start;
+     }
+     .flex-item-5 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-start;
+     }
+     .flex-item-6 {
+         align-items: flex-start;
+     }
+     .flex-item-7 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-start;
+     }
+     .flex-item-8 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-start;
+     }
+     .flex-item-9 {
+         padding: 10px;
+         flex: 50%;
+         align-items: flex-start;
+     }
+     /*---------iNFO--------*/
+     .info {
+         text-align: left;
+         color: whitesmoke;
+         font-family: poppings, sans-serif;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+     }
+     .info2 {
+         text-align: left;
+         color: $secondTittleColor;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+     }
+     .subtitulo1Info {
+         text-align: left;
+         color: $secondTittleColor;
+         font-family: 'Montserrat', sans-serif;
+         letter-spacing: 3px;
+         text-transform: uppercase;
+     }
+     .about1 {
+         color: $secondTittleColor;
+     }
+     .about2 {
+         color: $secondTittleColor
+     }
+     p {
+         color: rgb(227, 228, 233);
+     }
+     .myDivInfo {
+         border: 5px outset rgb(33, 33, 33);
+         background-color: rgb(33, 33, 33);
+         text-align: left;
+         text-transform: uppercase;
+         color: whitesmoke;
+     }
+     /*----BARRA-MENU + Transiciones----*/
+     .topbarmenu {
+         background-color: #333;
+         overflow: hidden;
+         .a {
+             float: left;
+             color: $secondTittleColor;
+             text-align: center;
+             padding: 14px 16px;
+             margin: 10px;
+             text-decoration: none;
+             font-size: 17px;
+         }
+         .a:hover {
+             background-color: #ddd;
+             color: black;
+         }
+         .a.active {
+             background-color: $secondTittleColor;
+             color: white;
+         }
+     }
+     ul {
+         list-style-type: none;
+         font-size: 0;
+         margin: 0;
+         padding: 0;
+     }
+     ul li {
+         display: inline-block;
+         width: 20%;
+         position: relative;
+         font-size: 14px
+     }
+     ul ul li {
+         display: block;
+         position: absolute;
+         background: rgb(68, 66, 66)
+     }
+     ul ul {
+         position: absolute;
+         display: none;
+     }
+     ul li:hover ul {
+         display: block;
+         height: 100px;
+         width: 200px;
+         transition: 3s;
+     }
+     /*-----TRANSITIONS Discover----*/
+     .ImgOpacity {
+         height: 200px;
+         width: 200px;
+         background: red;
+         -webkit-transition: opacity 1s ease-in-out;
+         -moz-transition: opacity 1s ease-in-out;
+         -ms-transition: opacity 1s ease-in-out;
+         -o-transition: opacity 1s ease-in-out;
+         transition: opacity 1s ease-in-out;
+     }
+     .ImgOpacity:hover {
+         filter: alpha(opacity=50);
+         opacity: 0.5;
+     }
+     /*------GRIDS---------*/
+     #grilla {
+         height: 90vh;
+         width: 90vw;
+         margin: 2px auto;
+         display: grid;
+         grid-template-areas: "header header" " main right" "footer footer";
+         grid-template-rows: auto;
+         grid-template-columns: auto;
+         grid-column-gap: 9px;
+         grid-row-gap: 15px;
+         height: 100vh;
+         margin: 0;
+     }
+     .cell-1 {
+         background: rgb(33, 33, 33);
+         grid-area: header;
+     }
+     .cell-2 {
+         background: rgb(33, 33, 33);
+         grid-area: main;
+         justify-items: start;
+         padding: 5px;
+     }
+     .cell-3 {
+         background: rgb(33, 33, 33);
+         grid-area: right;
+     }
+     .cell-4 {
+         background: rgb(33, 33, 33);
+         grid-area: footer;
+     }
+     .cell {
+         border: 3px outset rgb(33, 33, 33);
+         background-color: rgb(33, 33, 33);
+         text-align: left;
+         text-transform: uppercase;
+         font-family: 'Montserrat', sans-serif;
+         color: whitesmoke;
+     }
+     /* Center align the text within the three columns below the carousel */
+     .marketing .col-lg-4 {
+         margin-bottom: 1.5rem;
+         text-align: center;
+     }
+     .marketing h2 {
+         font-weight: 400;
+     }
+     .marketing .col-lg-4 p {
+         margin-right: .75rem;
+         margin-left: .75rem;
+     }
+     /* Featurettes
+  ------------------------- */
+     .featurette-divider {
+         margin: 5rem 0;
+         /* Space out the Bootstrap <hr> more */
+     }
+     /* Thin out the marketing headings */
+     .featurette-heading {
+         font-weight: 300;
+         line-height: 1;
+         letter-spacing: -.05rem;
+     }
+     /* RESPONSIVE CSS
+  -------------------------------------------------- */
+     @media (min-width: 40em) {
+         /* Bump up size of carousel content */
+         .carousel-caption p {
+             margin-bottom: 1.25rem;
+             font-size: 1.25rem;
+             line-height: 1.4;
+         }
+         .featurette-heading {
+             font-size: 50px;
+         }
+     }
+     @media (min-width: 62em) {
+         .featurette-heading {
+             margin-top: 7rem;
+         }
+     }
+ }
